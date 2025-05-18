@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+          <legend>NAME</legend>
+          <input placeholder="enter your name here">
+        </fieldset>
+        <fieldset>
+          <legend>AGE</legend>
+          <input placeholder="enter your age in number">
+        </fieldset>
+        <fieldset>
+          <legend>SEX</legend>
+          <select name="" required>
+            <option selected disabled>----select your gender----</option>
+            <option value="1">Male</option>
+            <option value="1">Female</option>
+            <option value="1">Trans Gender</option>
+          </select>
+        </fieldset>
+          
+          <fieldset>
+            <legend>QUALIFICATION</legend>
+            <input placeholder="enter qualification">
+          </fieldset>
+          <fieldset>
+          <legend>ADDRESS</legend>
+        
+          <input placeholder="enter your full address">
+          <select name="" required>
+            <option selected disabled>----select your state----</option>
+            <option value="1">Punjab</option>
+            <option value="2">Bihar</option>
+            <option value="3">Chhattisgarh</option>
+            <option value="4">Uttar Pradesh</option>
+            <option value="5">Uttar Pradesh</option>
+            <option value="6">Uttar Pradesh</option>
+          </select>
+            
+          <select name=""required>
+          <option selected disabled>----select your countary----</option>
+          <option value="91">India</option>
+          <option value="92">pak</option>
+          <option value="880">bangladesh</option>
+          <option value="81">Japan</option>
+          <option value="82">south korea</option>
+          
+          
+
+          </select>
+        </fieldset>
+      </form>
+      <table>
+        <table border="5px">
+        <tr>
+          <th>S.no</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Sex</th>
+          
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Guru</td>
+          <td>24</td>
+          <td>Male</td>
+        </tr>
+      </table>
+      <img src="https://images.pexels.com/photos/13733587/pexels-photo-13733587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="300px" width="300px">
+      <img src="https://images.pexels.com/photos/11921988/pexels-photo-11921988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="300px" width="300px">
+      <video src="https://videos.pexels.com/video-files/17883695/17883695-uhd_2560_1440_30fps.mp4" height="500px" width="500px" controls loop autoplay></video>
+    <form action="/App/login" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="enter your name">
+        <input type="password" name="password" placeholder="enter your password">
+        <button type="submit">login</button>
+        
+
+    </form>
+</body>
+</html>
